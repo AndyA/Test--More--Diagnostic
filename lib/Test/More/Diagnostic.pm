@@ -5,7 +5,7 @@ use strict;
 use Carp;
 use TAP::Parser::YAMLish::Writer;
 
-our $VERSION = '0.2';
+our $VERSION = '0.3';
 our @ISA     = qw( Test::Builder );
 
 use constant KNOWN_TAP_VERSION => 13;
@@ -66,7 +66,7 @@ Test::More::Diagnostic - Conditionally add YAML diagnostics to Test::More's outp
 
 =head1 VERSION
 
-This document describes Test::More::Diagnostic version 0.2
+This document describes Test::More::Diagnostic version 0.3
 
 =head1 SYNOPSIS
 
