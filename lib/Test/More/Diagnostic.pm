@@ -5,8 +5,9 @@ use strict;
 use Carp;
 use TAP::Parser::YAMLish::Writer;
 
-our $VERSION = '0.3';
-our @ISA     = qw( Test::Builder );
+use vars qw($VERSION @ISA);
+$VERSION = '0.3';
+@ISA     = qw( Test::Builder );
 
 use constant KNOWN_TAP_VERSION => 13;
 
@@ -108,11 +109,11 @@ the wrong place in the output.
 
 =item C<< caller >>
 
-Overwridden from Test::Builder. Adjusts the stack depth to account for our intercept.
+Overridden from Test::Builder. Adjusts the stack depth to account for our intercept.
 
 =item C<< ok >>
 
-Overwridden from Test::Builder. Adds basic YAML diagnostic output to failing tests.
+Overridden from Test::Builder. Adds basic YAML diagnostic output to failing tests.
 
 =back
 
